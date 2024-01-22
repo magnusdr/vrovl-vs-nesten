@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "DSDigit";
+  src: url("/DS-DIGIT.woff2");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff0e3;
+  padding: 0;
+  margin: 0;
+}
+.scoreboard {
+  position: relative;
+}
+.scoreboard img {
+  width: 100svw;
+}
+#timer {
+  position: absolute;
+  top: 13.5vw;
+  left: 0;
+  width: 100vw;
+  font-family: DSDigit;
+  font-size: 5vw;
+  text-align: center;
+  color: #f62726;
+}
+.scoreboard .first-score {
+  position: absolute;
+  top: 16vw;
+  left: 8vw;
+  font-family: DSDigit;
+  color: #fff0e3;
+  font-size: 30vw;
+  text-shadow: 0 0 20px #fff0e3;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+.scoreboard .last-score {
+  position: absolute;
+  top: 16vw;
+  right: 8vw;
+  font-family: DSDigit;
+  color: #fff0e3;
+  font-size: 30vw;
+  text-shadow: 0 0 20px #fff0e3;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
